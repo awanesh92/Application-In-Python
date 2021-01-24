@@ -1,0 +1,14 @@
+
+CREATE TABLE auth_user
+(id serial PRIMARY KEY, 
+  password VARCHAR(10) NOT NULL,
+ last_login TIMESTAMP, is_superuser VARCHAR(4), 
+username VARCHAR(15) NOT NULL, first_name VARCHAR(15) NOT NULL, 
+last_name VARCHAR(15) NOT NULL, email VARCHAR(30) , 
+is_staff VARCHAR(5) NOT NULL, is_active VARCHAR(5) NOT NULL, date_joined TIMESTAMP
+);
+
+CREATE TABLE  ams_app_profile (
+id serial PRIMARY KEY, user_id VARCHAR(15) NOT NULL
+, role VARCHAR(4), matric_number  INTEGER);
+
